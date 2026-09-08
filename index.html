@@ -1,12 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brandon Leavitt- Portfolio</title>
+
+<!--
+  HOW TO USE THIS FILE
+  1. Replace anything in [BRACKETS] with your own text.
+  2. Add an "images" folder next to this file with:
+       headshot.jpg, project1.jpg, project2.jpg, project3.jpg
+  3. To add a new project, copy one "<div class="project">" block
+     and paste it below the others.
+  4. To add a class/internship, copy one "<div class="course-card">"
+     block and paste it next to the others.
+-->
+
+<style>
+  :root {
+    /*colors*/
+    background: #FFFFFF;
+    --text: #333333;
+    --accent: #6E6E6E;
+    --link: #3B6EA5;
+    --border: #E5E5E5;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(background);
+    color: var(--text);
+    margin:0;
+    line-height:1.5
+  }
+
+  /* stops content from stretching edge-to-edge on wide screens*/
+  .container {
+    max-width: 700px;
+    margin:0 auto;
+    padding: 20px;
+  }
+
+  /* header */
+  .header {
+    border-bottom: 1px solid var(--border);
+  }
+  .header .container {
+    display: flex;/* name and nav links in one row */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .header a {
+    color: var(--link);
+    text-decoration: none;
+    margin-left: 15px;
+  }
+
+  h2 {
+    border-bottom: 3px solid var(--accent);
+    padding-bottom: 8px;
+    display: inline-block;
+  }
+
+  /* Small muted text used for the role label, project stack, and course subtitle */
+  .label {
+    color: var(--accent);
+    font-size: 14px;
+  }
+
+  /*intro*/
+  .intro {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+
+  .headshot {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+  }
+
+  .link-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding-bottom: 30px;
+  }
+
+  .link-row a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  /* skills */
+  .skill-tag {
+    display: inline-block;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 6px 12px;
+    margin: 4px 4px 4px 0;
+    font-size: 14px;
+  }
+
+  /* coursework*/
+  .course-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;      /* lets you scroll sideways if cards don't fit */
+    padding: 10px 0 20px;
+  }
+
+  .course-card {
+    flex: 0 0 190px;       /* fixed width so cards don't stretch */
+    border: 1px solid var(--border);
+    padding: 15px;
+  }
+
+  /*projects */
+  .project {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+
+  .project img, .course-card img {
+    width: 200px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+  }
+
+  .project-text {
+    flex: 1;
+    min-width: 220px;
+  }
+
+  /*footer*/
+  .footer {
+    border-top: 1px solid var(--border);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer a {
+    color: var(--link);
+  }
+
+  /* Stack image above text on narrow screens */
+  @media (max-width: 500px) {
+    .intro, .project {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .project img {
+      width: 100%;
+    }
+  }
+</style>
 </head>
 <body>
-  <h1>Hello World!</h1>
-  <p>This is my first GitHub Pages site </p>
+
+
+
+
+
+  
+  <!-- ============ HEADER / NAV ============ -->
+  <div class="header">
+    <div class="container">
+      <strong>Brandon Name</strong>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#coursework">Coursework</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- intro-->
+    <div class="intro">
+      <img class="headshot" src="images/headshot.jpg" alt="Photo of me">
+      <div>
+        <p class="label">Electrical and Computer Engineer Student</p>
+        <h1>Hi, I'm Brandon Leavitt</h1>
+        <p>I am a current undergraduate student at the University of Washington who is majoring in electrical and computer engineering. I am passionate about embedded systems, <br> circuit design, signal processing, coding, and power. In my freetime I like to <br>play soccer, game, and try to find new candles.</p>
+      </div>
+    </div>
+
+    <div class="link-row">
+      <a href="https://github.com/[yourusername]">GitHub</a>
+      <a href="https://linkedin.com/in/[yourprofile]">LinkedIn</a>
+      <a href="[link-to-resume.pdf]">Resume</a>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <div id="about">
+      <h2>About Me</h2>
+      <p>[A short paragraph: where you study/work, what interests you in
+      electrical engineering, and what you're looking for.]</p>
+    </div>
+
+    <!-- ============ SKILLS ============ -->
+    <div id="skills">
+      <h2>Skills</h2>
+      <p>
+        <span class="skill-tag">[C / C++]</span>
+        <span class="skill-tag">[Python]</span>
+        <span class="skill-tag">[Verilog / VHDL]</span>
+        <span class="skill-tag">[Altium / KiCad]</span>
+        <span class="skill-tag">[Add more]</span>
+      </p>
+    </div>
+
+    <!-- ============ COURSEWORK ============ -->
+    <div id="coursework">
+      <h2>Coursework &amp; Internships</h2>
+      <div class="course-row">
+        <div class="course-card">
+          <strong>[Company Name]</strong>
+          <p class="label">Internship, [Year]</p>
+          <p>[One line about what you worked on.]</p>
+        </div>
+        <div class="course-card">
+          <strong>[Class Name]</strong>
+          <p class="label">[School], [Course Number]</p>
+          <p>[One line about what the class covered.]</p>
+        </div>
+        <!-- Copy a "course-card" div above to add more -->
+      </div>
+    </div>
+
+    <!-- ============ PROJECTS ============ -->
+    <div id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <img src="images/project1.jpg" alt="[Project 1 name]">
+        <div class="project-text">
+          <h3>[Project 1 Title]</h3>
+          <p class="label">Stack: [e.g. STM32, C, KiCad, I2C]</p>
+          <p>[What it is, the problem it solves, and one technical challenge you solved.]</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/project2.jpg" alt="[Project 2 name]">
+        <div class="project-text">
+          <h3>[Project 2 Title]</h3>
+          <p class="label">Stack: [e.g. Python, FPGA, SPI]</p>
+          <p>[What it is and the problem it solves.]</p>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="images/project3.jpg" alt="Personal portfolio website">
+        <div class="project-text">
+          <h3>Personal Portfolio Website</h3>
+          <p class="label">Stack: HTML, CSS, GitHub Pages</p>
+          <p>Built with plain HTML and CSS - no frameworks. Learned how
+          Flexbox lays out the photo and text side by side, and how CSS
+          variables let me change the whole color scheme in a few lines.</p>
+        </div>
+      </div>
+
+      <!-- Copy a "project" div above to add more -->
+    </div>
+
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <div class="footer" id="contact">
+    <p>[your.email@example.com]</p>
+  </div>
+
 </body>
 </html>
+  </div>
+ 
+</body>
+</html>
+ 
