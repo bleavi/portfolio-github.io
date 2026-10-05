@@ -114,12 +114,12 @@
   .course-row {
     display: flex;
     gap: 15px;
-    overflow-x: auto;      /* lets you scroll sideways if cards don't fit */
+    overflow-x: auto;
     padding: 10px 0 20px;
   }
 
   .course-card {
-    flex: 0 0 190px;       /* fixed width so cards don't stretch */
+    flex: 0 0 190px;
     border: 1px solid var(--border);
     padding: 15px;
   }
@@ -197,12 +197,11 @@
       <div>
         <p class="label">Electrical and Computer Engineer Student</p>
         <h1>Hi, I'm Brandon Leavitt</h1>
-        <p>I am a current undergraduate student at the University of Washington who is majoring in electrical and computer engineering. I am passionate about embedded systems, <br> circuit design, signal processing, coding, and power. In my freetime I like to <br>play soccer, game, and try to find new candles.</p>
+        <p>I am a current undergraduate student at the University of Washington who is majoring in electrical and computer engineering. I am passionate about embedded systems, <br> circuit design, signal processing, coding, and power. In my freetime I like to <br>play soccer, 3D print, and play pickleball.</p>
       </div>
     </div>
 
     <div class="link-row">
-      <a href="https://github.com/[yourusername]">GitHub</a>
       <a href="https://linkedin.com/in/[yourprofile]">LinkedIn</a>
       <a href="[link-to-resume.pdf]">Resume</a>
     </div>
@@ -210,30 +209,58 @@
     <!-- ============ SKILLS ============ -->
     <div id="skills">
       <h2>Skills</h2>
+ 
+      <strong class="skill-group-label">Languages</strong>
       <p>
-        <span class="skill-tag">[C / C++]</span>
-        <span class="skill-tag">[Python]</span>
-        <span class="skill-tag">[Verilog / VHDL]</span>
-        <span class="skill-tag">[Altium / KiCad]</span>
-        <span class="skill-tag">[Add more]</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Verilog</span>
+      </p>
+ 
+      <strong class="skill-group-label">Hardware </strong>
+      <p>
+        <span class="skill-tag">Arduino</span>
+        <span class="skill-tag">FPGA (basic)</span>
+        <span class="skill-tag">Digital Logic Design</span>
+      </p>
+ 
+      <strong class="skill-group-label">Design Tools</strong>
+      <p>
+        <span class="skill-tag">Fusion 360</span>
+        <span class="skill-tag">KiCad</span>
+        <span class="skill-tag">LTspice</span>
+        <span class="skill-tag">Quartus</span>
+        
       </p>
     </div>
 
     <!-- ============ COURSEWORK ============ -->
     <div id="coursework">
-      <h2>Coursework &amp; Internships</h2>
+      <h2>Coursework</h2>
       <div class="course-row">
         <div class="course-card">
-          <strong>[Company Name]</strong>
-          <p class="label">Internship, [Year]</p>
-          <p>[One line about what you worked on.]</p>
+          <strong>Digital Circuits and Systems</strong>
+          <p class="label">UW, EE 271</p>
+          <p>Combinational and sequential logic design, state machines, and hardware description languages.</p>
         </div>
+ 
         <div class="course-card">
-          <strong>[Class Name]</strong>
-          <p class="label">[School], [Course Number]</p>
-          <p>[One line about what the class covered.]</p>
+          <strong>Programming for Signal &amp; Info Processing</strong>
+          <p class="label">UW, EE 241</p>
+          <p>Introduction to programming for signal and information processing. Basic syntax and data types.</p>
         </div>
-        <!-- Copy a "course-card" div above to add more -->
+ 
+        <div class="course-card">
+          <strong>Fundamentals of Electrical Engineering</strong>
+          <p class="label">UW, EE 215</p>
+          <p>Basic circuit and systems concepts, Ohm's and Kirchhoff's laws, and Circuit analysis.</p>
+        </div>
+ 
+        <div class="course-card">
+          <strong>Computer Hardware Skills</strong>
+          <p class="label">UW, EE 201</p>
+          <p>Lab covering soldering, instrumentation, and basic hardware fundamentals.</p>
+        </div>
       </div>
     </div>
 
@@ -269,8 +296,6 @@
           variables let me change the whole color scheme in a few lines.</p>
         </div>
       </div>
-
-      <!-- Copy a "project" div above to add more -->
     </div>
 
   </div>
