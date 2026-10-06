@@ -62,18 +62,21 @@
   /*intro*/
   .intro {
     display: flex;
-    align-items: center;
-    gap: 25px;
+    align-items: column;
+    gap: 20px;
     flex-wrap: wrap;
     padding: 30px 0;
   }
 
   .headshot {
-    width: auto;
-    height: 200px;
-    object-fit: cover;
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    /*object-fit: cover;
+    image-rendering: smooth*/
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     border: 1px solid var(--border);
-    image-rendering: smooth
+    
   }
 
   .link-row {
@@ -179,12 +182,12 @@
   <div class="container">
 
     <div class="intro">
-      <img class="headshot" src="Brandonphoto.jpg" alt="Photo of me">
       <div>
-        <p class="label">Electrical and Computer Engineer Student</p>
+        <p class="label">Electrical and Computer Engineering Student</p>
         <h1>Hi, I'm Brandon Leavitt</h1>
         <p>I am a current undergraduate student at the University of Washington who is majoring in electrical and computer engineering. I am passionate about embedded systems, <br> circuit design, signal processing, coding, and power. In my freetime I like to <br>play soccer, 3D print, and play pickleball.</p>
       </div>
+      <img class="headshot" src="Brandonphoto.jpg" alt="Photo of me">
     </div>
 
     <div class="link-row">
