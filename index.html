@@ -62,21 +62,20 @@
   /*intro*/
   .intro {
     display: flex;
-    align-items: column;
-    gap: 20px;
+    align-items: center;
+    gap: 25px;
     flex-wrap: wrap;
     padding: 30px 0;
   }
 
   .headshot {
-    width: 180px;
-    height: auto;
-    border-radius: 8px;
-    /*object-fit: cover;
-    image-rendering: smooth*/
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 120px;
+    height: 160px;
+    width: auto;
+    height: 200px;
+    object-fit: cover;
     border: 1px solid var(--border);
-    
+    image-rendering: smooth
   }
 
   .link-row {
@@ -115,7 +114,7 @@
     padding: 15px;
   }
 
-  
+
   .project {
     display: flex;
     gap: 20px;
@@ -126,6 +125,8 @@
 
   .project img, .course-card img {
     width: 200px;
+    height: 140px;
+    object-fit: cover;
     height: auto;
     max-height: 250px;
     object-fit: contain;
@@ -164,7 +165,7 @@
 
 
 
-  
+
   <!-- ============ HEADER / NAV ============ -->
   <div class="header">
     <div class="container">
@@ -182,12 +183,12 @@
   <div class="container">
 
     <div class="intro">
+      <img class="headshot" src="Brandonphoto.jpg" alt="Photo of me">
       <div>
-        <p class="label">Electrical and Computer Engineering Student</p>
+        <p class="label">Electrical and Computer Engineer Student</p>
         <h1>Hi, I'm Brandon Leavitt</h1>
         <p>I am a current undergraduate student at the University of Washington who is majoring in electrical and computer engineering. I am passionate about embedded systems, <br> circuit design, signal processing, coding, and power. In my freetime I like to <br>play soccer, 3D print, and play pickleball.</p>
       </div>
-      <img class="headshot" src="Brandonphoto.jpg" alt="Photo of me">
     </div>
 
     <div class="link-row">
@@ -199,28 +200,28 @@
     <div id="skills">
       <h2>Skills</h2>
       <p> </p>
- 
+
       <strong class="skill-group-label">Languages</strong>
       <p>
         <span class="skill-tag">Java</span>
         <span class="skill-tag">Python</span>
         <span class="skill-tag">Verilog</span>
       </p>
- 
+
       <strong class="skill-group-label">Hardware </strong>
       <p>
         <span class="skill-tag">Arduino</span>
         <span class="skill-tag">FPGA (basic)</span>
         <span class="skill-tag">Digital Logic Design</span>
       </p>
- 
+
       <strong class="skill-group-label">Design Tools</strong>
       <p>
         <span class="skill-tag">Fusion 360</span>
         <span class="skill-tag">KiCad</span>
         <span class="skill-tag">LTspice</span>
         <span class="skill-tag">Quartus</span>
-        
+
       </p>
     </div>
 
@@ -234,37 +235,37 @@
           <p class="label">UW, EE 280 &middot; In Progress</p>
           <p>Introduces the modeling and physics principles behind electrical and optical/photonic devices, including how semiconductor devices work and are used in circuits.</p>
         </div>
- 
+
         <div class="course-card">
           <strong>Circuit Theory</strong>
           <p class="label">UW, EE 233 &middot; In Progress</p>
           <p>Deeper circuit theory covering sinusoidal signals, phasors, and frequency response, with computer-based circuit analysis.</p>
         </div>
- 
+
         <div class="course-card">
           <strong>Signals, Systems, and Data I</strong>
           <p class="label">UW, EE 242 &middot; In Progress</p>
           <p>Introduction to signal processing, including both continuous- and discrete-time signals and systems. Mathematical foundations of signals and systems analysis.</p>
         </div>
-        
+
         <div class="course-card">
           <strong>Digital Circuits and Systems</strong>
           <p class="label">UW, EE 271</p>
           <p>Combinational and sequential logic design, state machines, and hardware description languages.</p>
         </div>
- 
+
         <div class="course-card">
           <strong>Programming for Signal &amp; Info Processing</strong>
           <p class="label">UW, EE 241</p>
           <p>Introduction to programming for signal and information processing. Basic syntax and data types.</p>
         </div>
- 
+
         <div class="course-card">
           <strong>Fundamentals of Electrical Engineering</strong>
           <p class="label">UW, EE 215</p>
           <p>Basic circuit and systems concepts, Ohm's and Kirchhoff's laws, and Circuit analysis.</p>
         </div>
- 
+
         <div class="course-card">
           <strong>Computer Hardware Skills</strong>
           <p class="label">UW, EE 201</p>
@@ -324,7 +325,6 @@
 </body>
 </html>
   </div>
- 
+
 </body>
 </html>
- 
