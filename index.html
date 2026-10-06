@@ -69,8 +69,8 @@
   }
 
   .headshot {
-    width: 120px;
-    height: 160px;
+    width: auto;
+    height: 200px;
     object-fit: cover;
     border: 1px solid var(--border);
     image-rendering: smooth
@@ -123,8 +123,9 @@
 
   .project img, .course-card img {
     width: 200px;
-    height: 140px;
-    object-fit: cover;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
     border: 1px solid var(--border);
   }
 
